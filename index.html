@@ -21,67 +21,80 @@
             <a href="#aboutMe"><i class="fa-solid fa-user"></i> Om mig</a>
             <a href="#projects"><i class="fa-solid fa-clipboard"></i> Projekt</a>
             <a href="#contact"><i class="fa-solid fa-envelope"></i> Kontakt</a>
+            
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-</div>
+                <i class="fa fa-bars"></i></a>
+            </div>
     </nav>
   </header>
-
-<div class="grid-container">
-    <div class="grid-item item1">
-        <h1>Välkommen till Sofis CV-sida</h2>
-    </div>
-
-    <div class="grid-item item2">
-        <h2>Om mig</h2>
-            <p> Mitt namn är Sofi Carlsson, jag är 26 år gammal och kommer från Linköping.
-            2023 flyttade jag till Örebro för att studera systemvetenskap och det är ett beslut jag verkligen inte ångrar.
-            Under utbildningen har jag lärt mig mycket om programmering, problemlösning och agilt samarbete, och jag känner mig nu taggad på att ta nästa steg ut i arbetslivet.
-            Jag har alltid haft ett stort intresse för språk, både mänskliga och datorbaserade.
-            Tidigare studerade jag kinesiska vid Uppsala universitet och har bott i både Kina och Spanien.
-            Att leva utomlands har gett mig värdefulla erfarenheter av olika kulturer och arbetssätt, och gjort mig till en social, nyfiken och samarbetsvillig person.
-            Jag ser verkligen fram emot att få bidra med mina kunskaper och erfarenheter i framtida projekt och samarbeten.
-            </p>
-    </div>
     
-    <div class="grid-item item3">
-        <h2>Bild på mig</h2>
-          <img src="images\other\picture-me.jpg" alt="Bild på Sofi Carlsson" class="profile-picture">
-    </div>
+    <div class="grid-container">
+        <!--item 1: Välkommen -->
+        <div class="grid-item item1">
+            <h1>Välkommen till Sofis CV-sida</h2>
+        </div>
 
-    <div class="grid-item item4">
-      <h2>Projekt</h2>
-          <div class="project-container">
-            <div class="project-item">
-              <h3>SweLearn</h3>
-              <img src="images\other\projects\swelearn\sw-picture-eng.png" alt="bild för SweLearn" class="project-image" />
-              <p>En personlig portfolio webbplats som visar mina projekt och färdigheter inom webbutveckling.</p>
-                <div class="button-container">
-                    <a href="swelearn.html" class="project-link-button">Läs mer</a>
+        <!--item 2: Om mig -->
+        <div class="grid-item item2" id="aboutMe">
+            <h2>Om mig</h2>
+                <p> Mitt namn är Sofi Carlsson, jag är 26 år gammal och kommer från Linköping.
+                2023 flyttade jag till Örebro för att studera systemvetenskap och det är ett beslut jag verkligen inte ångrar.
+                Under utbildningen har jag lärt mig mycket om programmering, problemlösning och agilt samarbete, och jag känner mig nu taggad på att ta nästa steg ut i arbetslivet.
+                Jag har alltid haft ett stort intresse för språk, både mänskliga och datorbaserade.
+                Tidigare studerade jag kinesiska vid Uppsala universitet och har bott i både Kina och Spanien.
+                Att leva utomlands har gett mig värdefulla erfarenheter av olika kulturer och arbetssätt, och gjort mig till en social, nyfiken och samarbetsvillig person.
+                Jag ser verkligen fram emot att få bidra med mina kunskaper och erfarenheter i framtida projekt och samarbeten.
+                </p>
+        </div>
+        
+        <!--item 3: Bild på mig -->
+        <div class="grid-item item3">
+            <h2>Bild på mig</h2>
+            <img src="images\other\picture-me.jpg" alt="Bild på Sofi Carlsson" class="profile-picture">
+        </div>
+
+        <!--item 4: Projekten -->
+        <div class="grid-item item4" id="projects">
+        <h2>Projekt</h2>
+            <div class="project-container">
+                <div class="project-item">
+                <h3>SweLearn</h3>
+                <img src="images\other\projects\swelearn\sw-picture-eng.png" alt="bild för SweLearn" class="project-image" />
+                <p>En personlig portfolio webbplats som visar mina projekt och färdigheter inom webbutveckling.</p>
+                    <div class="button-container">
+                        <a href="swelearn.html" class="project-link-button">Läs mer</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                <h3>Gallactic Getaway</h3>
+                <img src="images\other\projects\gallactic-getaway\gg-picture-home.png" alt="bild för SweLearn" class="project-image" />
+                <p>En komplett e-handelslösning med produktkatalog, kundvagn och betalningsintegration.</p>
+                    <div class="button-container">
+                        <a href="gallactic-getaway.html" class="project-link-button">Läs mer</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                <h3>Projekt 3: Bloggplattform</h3>
+                <p>En bloggplattform där användare kan skapa och dela sina egna inlägg med andra.</p>
+                </div>
+
+                <div class="project-item">
+                <h3>Projekt 4: hejhej</h3>
+                <p>En bloggplattform där användare kan skapa och dela sina egna inlägg med andra.</p>
                 </div>
             </div>
-
-            <div class="project-item">
-              <h3>Gallactic Getaway</h3>
-               <img src="images\other\projects\gallactic-getaway\gg-picture-home.png" alt="bild för SweLearn" class="project-image" />
-              <p>En komplett e-handelslösning med produktkatalog, kundvagn och betalningsintegration.</p>
-                <div class="button-container">
-                    <a href="gallactic-getaway.html" class="project-link-button">Läs mer</a>
-                </div>
+        </div>
+        
+        <!--item 5: Kontakt -->
+        <div class="grid-item item5" id="contact">
+            <h2>Kontakt</h2>
+            <div class="contact-info">
+                <p><i class="fa-solid fa-envelope"></i> Email: soficarlsson.sc@gmail.com</p>
+                <p><i class="fa-solid fa-envelope"></i> Linkedin: 
+                <p><i class="fa-solid fa-envelope"></i> Github: 
             </div>
-
-            <div class="project-item">
-              <h3>Projekt 3: Bloggplattform</h3>
-              <p>En bloggplattform där användare kan skapa och dela sina egna inlägg med andra.</p>
-            </div>
-
-            <div class="project-item">
-              <h3>Projekt 4: hejhej</h3>
-              <p>En bloggplattform där användare kan skapa och dela sina egna inlägg med andra.</p>
-            </div>
-          </div>
-    </div>
-    
-    <div class="grid-item item5">Kontakt</div>
+        
+        </div>
 </body>
