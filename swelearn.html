@@ -35,6 +35,15 @@
         <!--item 2: Projekt beskrivning -->
         <div class="grid-item item2">
           <h2>Beskrivning</h2>
+          <p>Detta projekt gjordes i samband med kursen <i>CS50P - Introduction to Programming with Python</i> via Harvards Onlineuniversitet via EDX.</p>
+          <p></p>
+          <p> <b>SweLearn</b> är en inlärningsapplikation där användare kan öva svenska på ett strukturerat sätt. 
+              Användaren kan välja att få instruktionerna på spanska eller på engelska och börjar därefter genom att välja en svårighetsnivå mellan 1 och 4. 
+              Nivå 1 handlar om substantiv som är djur. 
+              Nivå 2 handlar om verb i presens, nivå 3 handlar om substantiv i bestämd form och nivå 4 handlar om substantiv i bestämd form tillsammans med ett verb i presens. 
+              Efter att ha slutfört en nivå kan användaren välja att gå vidare till nästa nivå eller avsluta programmet.</p>
+          <p></p>
+          <p>All data lagras i en JSON-fil, och en separat testfil har skapats för att verifiera programmets funktionalitet.</p>
         </div>
         <!--item 3: Teknologier som används -->
         <div class="grid-item item3">
@@ -42,6 +51,8 @@
           <ul>
             <li>Python</li>
             <li>Pytest</li>
+            <li>JSON-lagring</li>
+            <li>emoji-library</li>
           </ul>
         </div>
 
@@ -51,50 +62,53 @@
           <div class="project-container">
               <div class="project-item">
                   <h3>Engelska versionen</h3>
-                  <p> Här kommer info....</p>
+                  <p>Instruktioner finns tillgängliga både på Engelska och på Spanska, som visas till höger.</p>
                   <img src="images\other\projects\swelearn\sw-picture-eng.png" alt="Bild från SweLearn projektet på engelska" class="project-image-show">
               </div>
 
               <div class="project-item">
                   <h3>Spanska versionen</h3>
-                  <p> Här kommer info....</p>
+                  <p> Genom att använda ternary operators kunde jag på ett enkelt sätt kolla om användaren angivit engelska eller spanska som inmatningspråk och sedan välja rätt instruktioner.</p>
                   <img src="images\other\projects\swelearn\sw-picture-spanish.png" alt="Bild från SweLearn projektet på spanska" class="project-image-show">
               </div>
 
               <div class="project-item">
                   <h3>Datalagring</h3>
-                  <p> Här kommer info....</p>
+                  <p>Filen words.json innehåller all data som används i testet. Jag valde att använda en JSON-fil med dictionaries eftersom det gjorde det enklare att plocka ut relevant data eftersom den då var strukturerad enligt language (top level key), level samt keyvalue-pair word och word_swedish.</p>
                   <img src="images\other\projects\swelearn\sw-picture-json.png" alt="Bild från SweLearn projektet på datalagring" class="project-image-show">
               </div>
 
               <div class="project-item">
                   <h3>Pytest</h3>
-                  <p> Här kommer info....</p>
+                  <p>Pytest användes för att säkerställa att all funktionallitet fungerade korrekt genom att testa funktioner med fördefinierade parametrar och förväntade resultat.</p>
                   <img src="images\other\projects\swelearn\sw-picture-pytest.png" alt="Bild från SweLearn projektet på Pytest" class="project-image-show">
-              </div>
-              
-              <div class="project-item">
-                  <h3>Kod för att hämta ner giltigt språk, nivå samt hämta orden från json-filen</h3>
-                  <p> Här kommer info....</p>
-                  <img src="images\other\projects\swelearn\sw-picture-code.png" alt="Visar kod från SweLearn projektet för att valdiera språk, nivå och orden" class="project-image-show">
               </div> 
 
               <div class="project-item">
                   <h3>Kod för att välja språk</h3>
-                  <p> Här kommer info....</p>
+                  <p> Funktionen get_language tar användarens indata som en parameter och validerar True eller False om indata är antingen eng eller esp. Funktionen öppnar json-filen och kontrollerar om user_input är ett av nyckelvärdena på toppnivå, vilket är antingen "eng" eller "esp". Om så är fallet returnerar funktionen True och indata är nu validerad. Om språket inte är giltigt returnerar det False till main och funktionen anropas om och om igen tills användaren matar in "eng" eller "esp".</p>
                   <img src="images\other\projects\swelearn\sw-picture-code-get-language.png" alt="Visar kod från SweLearn projektet för att be användaren om språk" class="project-image-show">
-              </div> 
+              </div>
+              
+              <div class="project-item">
+                  <h3>Kod för att hämta ner giltigt språk, nivå samt hämta orden från json-filen</h3>
+                  <p>Funktionen get_level liknar get_language och tar användarens indata och validerar om det är en giltig nivå, dvs. 1, 2, 3 eller 4. Om leveln inte är giltig returnerar den False till main och funktionen anropas om och om igen tills användaren matar in rätt.</p>
+                  <p>Funktionen get_words fungerar annorlunda eftersom den tar in de validerade variablerna språk och nivå. Denna funktion öppnar json-filen och tar ut korrekt data och returnerar ordboken med nyckel- och nyckelvärdeparen för den nivån.</p>
+                  <img src="images\other\projects\swelearn\sw-picture-code.png" alt="Visar kod från SweLearn projektet för att valdiera språk, nivå och orden" class="project-image-show">
+              </div>
+
           </div>
         </div>
 
         <div class="grid-item item5">
           <h2>Genomgång av projektet</h2>
-          <h3>Youtube video</h3>
-          
+          <p>Här finns en video som gjordes i samband med slutuppgiften.</p>
+          <p></p>
+          <p>Youtube video går igenom projektet på engelska samt viktiga sammanband mellan json filen, pytestfilen och de viktiga bibliotek som användes.</p>
           <a href="https://www.linkedin.com/in/sofi-c-9635b6114" target="_blank">
                     <i class="fa-brands fa-youtube"></i>
                     Video
-          </a>
+                </a>
         </div>
 
   </div>

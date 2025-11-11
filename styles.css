@@ -80,10 +80,13 @@ h1, h2, h3, p {
   border-radius: 8px;  /* Rundade hörn */
 }
 
+.item5{
+  text-align: center;
+}
 
 /* För min profilbild */
 .profile-picture {
-    width: 200px;
+    width: 300px;
     height: auto;
     border-radius: 50%;
     display: block;
