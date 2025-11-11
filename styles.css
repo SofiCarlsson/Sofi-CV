@@ -99,6 +99,13 @@ h1, h2, h3, p {
   margin: 0 auto;   /* Centrerar bilden */
 }
 
+.project-image-show {
+   width: 100%;
+   max-width: 700px;
+   height: auto;
+   display: block;
+}
+
 a {
     text-decoration: none;
     padding: 1rem;
