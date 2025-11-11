@@ -97,10 +97,17 @@ h1, h2, h3, p {
 
 .project-image {
   width: 85%;       /* Tar upp 85% av bredden på förälderelementet */
-  height: auto;     /* Behåller proportionerna */
-  display: block;   /* Säkerställer att margin fungerar */
-  margin: 0 auto;   /* Centrerar bilden */
+  height: auto;     /* Behåller proportionerna för höjd och bredd*/
+  display: block;  
+  margin: 0 auto;  /* Centrerar bilden */
 }
+
+.project-logo-image{
+  width: 100%;
+  max-width: 500px;       
+  height: auto;     
+  display: block;   
+  margin: 0 auto;} /* Centrerar bilden */
 
 .project-image-show {
    width: 100%;
@@ -145,7 +152,7 @@ a {
 
 .contact-info i {
   color: #50468C;
-  /*width: 20px;  Fast bredd för ikonerna så de linjerar fint */
+  /*width: 20px;  Satt bredd för ikonerna */
 }
 
 
