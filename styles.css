@@ -8,6 +8,10 @@ h1, h2, h3, p {
     color: #081116;
     } 
 
+p {
+  font-size: 18px;
+}
+
 /* Färg på topnav lila */
 .topnav {
   background-color: #613182;
