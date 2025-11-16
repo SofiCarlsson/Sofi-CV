@@ -10,6 +10,11 @@ h1, h2, h3, p {
 
 p {
   font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+ul {
+  font-size: 18px;
 }
 
 /* Färg på topnav lila */
