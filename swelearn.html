@@ -38,7 +38,7 @@
         <!--item 2: Projekt beskrivning -->
         <div class="grid-item item2">
           <h2>Beskrivning</h2>
-          <p>Detta projekt gjordes i samband med kursen <i>CS50P - Introduction to Programming with Python</i> via Harvards Onlineuniversitet via EDX.</p>
+          <p>Detta projekt gjordes i samband med kursen <i>CS50P - Introduction to Programming with Python</i> via Harvards Onlineuniversitet via edX.</p>
           
           <p> <b>SweLearn</b> är en inlärningsapplikation där användare kan öva svenska på ett strukturerat sätt. 
               Användaren kan välja att få instruktionerna på spanska eller på engelska och börjar därefter genom att välja en svårighetsnivå mellan 1 och 4.</p> 
@@ -70,7 +70,7 @@
           <div class="project-container">
               <div class="project-item">
                   <h3>Engelska versionen</h3>
-                  <p>Instruktioner finns tillgängliga både på Engelska och på Spanska, som visas till höger.</p>
+                  <p>Instruktioner finns tillgängliga både på engelska och på spanska, som visas till höger.</p>
                   <img src="images\other\projects\swelearn\sw-picture-eng.png" alt="Bild från SweLearn projektet på engelska" class="project-image-show">
               </div>
 
@@ -82,7 +82,12 @@
 
               <div class="project-item">
                   <h3>Datalagring</h3>
-                  <p>Filen words.json innehåller all data som används i testet. Jag valde att använda en JSON-fil med dictionaries eftersom det gjorde det enklare att plocka ut relevant data eftersom den då var strukturerad enligt language (top level key), level samt keyvalue-pair word och word_swedish.</p>
+                  <p>Filen words.json innehåller all data som används i testet. Jag valde att använda en JSON-fil med dictionaries eftersom det gjorde det enklare att plocka ut relevant data, då den var strukturerad enligt:</p> 
+                      <ul>
+                        <li><b>Top-level key:</b> <i>language</i> - kan vara eng(engelska) eller esp(spanska)</li>
+                        <li><b>Nested key:</b> <i>level</i> - Kan vara mellan 1 till 4</li>
+                        <li><b>Key–value pair:</b> <i>word</i> är ordet på engelska eller spanska, och <i>word_swedish</i> är ordet på svenska</li>
+                      </ul>
                   <img src="images\other\projects\swelearn\sw-picture-json.png" alt="Bild från SweLearn projektet på datalagring" class="project-image-show">
               </div>
 
@@ -94,14 +99,14 @@
 
               <div class="project-item">
                   <h3>Kod för att välja språk</h3>
-                  <p> Funktionen get_language tar användarens indata som en parameter och validerar True eller False om indata är antingen eng eller esp. Funktionen öppnar json-filen och kontrollerar om user_input är ett av nyckelvärdena på toppnivå, vilket är antingen "eng" eller "esp". Om så är fallet returnerar funktionen True och indata är nu validerad. Om språket inte är giltigt returnerar det False till main och funktionen anropas om och om igen tills användaren matar in "eng" eller "esp".</p>
+                  <p> Funktionen get_language tar användarens indata som en parameter och validerar True eller False om indata är antingen eng eller esp. Funktionen öppnar JSON-filen och kontrollerar om user_input är en av de Top-level keys, vilket är antingen "eng" eller "esp". Om så är fallet returnerar funktionen True och indata är nu validerad. Om språket inte är giltigt returnerar funktionen False till main och funktionen anropas om och om igen tills användaren matar in "eng" eller "esp".</p>
                   <img src="images\other\projects\swelearn\sw-picture-code-get-language.png" alt="Visar kod från SweLearn projektet för att be användaren om språk" class="project-image-show">
               </div>
               
               <div class="project-item">
-                  <h3>Kod för att hämta ner giltigt språk, nivå samt hämta orden från json-filen</h3>
-                  <p>Funktionen get_level liknar get_language och tar användarens indata och validerar om det är en giltig nivå, dvs. 1, 2, 3 eller 4. Om leveln inte är giltig returnerar den False till main och funktionen anropas om och om igen tills användaren matar in rätt.</p>
-                  <p>Funktionen get_words fungerar annorlunda eftersom den tar in de validerade variablerna språk och nivå. Denna funktion öppnar json-filen och tar ut korrekt data och returnerar ordboken med nyckel- och nyckelvärdeparen för den nivån.</p>
+                  <h3>Kod för att hämta ner giltigt språk, nivå samt hämta orden från JSON-filen</h3>
+                  <p>Funktionen get_level liknar get_language och tar användarens indata och validerar om det är en giltig nivå, dvs. 1, 2, 3 eller 4. Om nivån inte är giltig returnerar den False till main och funktionen anropas om och om igen tills användaren matar in rätt.</p>
+                  <p>Funktionen get_words fungerar annorlunda eftersom den tar in de validerade variablerna språk och nivå. Denna funktion öppnar JSON-filen och hämtar korrekt data, och returnerar en ordbok med Key–value pairs för det valda språket och nivån till main.</p>
                   <img src="images\other\projects\swelearn\sw-picture-code.png" alt="Visar kod från SweLearn projektet för att valdiera språk, nivå och orden" class="project-image-show">
               </div>
 
@@ -112,7 +117,7 @@
           <h2>Genomgång av projektet</h2>
           <p>Här finns en video som gjordes i samband med slutuppgiften.</p>
           <p></p>
-          <p>Youtube video går igenom projektet på engelska samt viktiga sammanband mellan json filen, pytestfilen och de viktiga bibliotek som användes.</p>
+          <p>Youtube-videon går igenom projektet på engelska samt viktiga samband mellan JSON-filen, pytestfilen och de viktiga bibliotek som användes.</p>
           <a href="https://youtu.be/c8lZdrV1BX4" target="_blank">
                     <i class="fa-brands fa-youtube"></i>
                     Video
