@@ -1,22 +1,22 @@
-# Sofis Portfolio
-Detta är min personliga portfolio och CV-webbplats, byggd med HTML, CSS och JavaScript.
+# Sofi's Portfolio
+This is my portfolio and CV website, built with HTML, CSS and JavaScript.
 
-På webbplatsen är det möjligt att:
-- Läsa mer om mig
-- Utforska mina projekt
-- Hitta mina kontaktuppgifter
+On the website it is possible to:
+- Read more about me
+- See and read more about my projects
+- Find my contact details
 
-## Besök webbplatsen
+## Visit the website
 https://soficarlsson.github.io/Sofi-CV/
 
-## Funktioner
-- Presentation av mig och min bakgrund
-- Presentation av mina projekt
-- Kontaktuppgifter
-- Responsiv design
-- Publicerad via GitHub Pages
+## Features
+- Presentation of me and my background
+- Presentation of my projects
+- Contact details
+- Responsive design
+- Published via GitHub Pages
 
-## Tekniker
+## Technologies
 - HTML
 - CSS
 - JavaScript
